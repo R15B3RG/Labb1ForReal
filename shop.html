@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="shop.css" />
+    <script 
+    defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item" id="start-link">
+                <h3>
+                    <a class="nav-link start-link" href="./start.html">Start</a>
+                </h3>
+            </li>
+            <li class="nav-item" id="shop-link">
+                <h3>
+                    <a class="nav-link shop-link" href="#">Shop</a>
+                </h3>
+            </li>
+            <li class="nav-item" id="about-link">
+                <h3>
+                    <a class="nav-link about-link" href="./about.html">About</a>
+                </h3>
+            </li>
+        </ul>
+        <img src="./img/HMClogo.png" alt="" />
+    </div>
+</nav>
+    </header>
+    <div class="col-md-6">
+      <div class="mb-4">
+            <h2>Kundvagn</h2>
+            <ul id="cart" class="list-group"></ul>
+            <p>Totalt pris: <span id="total-price">0</span> kr</p>
+          </div>
+    </div>
+    <main class="container mt-5">
+      <div class="row" id="product-list">
+        <div class="col-md-4">
+            <img
+              src="img/CB1000R-Black-Edition.jpeg"
+              alt=""
+              class="img-fluid"
+              data-name="CB1000R Black Edition"
+              data-price="85000"
+            />
+            <p class="text-center">CB1000R Black Edition</p>
+            <p class="text-center price">Pris: 85.000 kr</p>
+            <div class="text-center">
+              <button class="btn btn-success mr-2 addToCart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+              <span class="quantity">0</span>
+              <button
+                class="btn btn-danger ml-2 removeFromCart"
+                onclick="removeFromCart(this)"
+              >
+                Remove From Cart
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/CMX500-REBEL-2022.jpg"
+              alt=""
+              class="img-fluid"
+              data-name="CMX500 Rebel"
+              data-price="65000"
+            />
+            <p class="text-center">CMX500 Rebel</p>
+            <p class="text-center price">Pris: 65.000 kr</p>
+            <div class="text-center">
+              <button class="btn btn-success mr-2 addToCart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+              <span class="quantity">0</span>
+              <button
+                class="btn btn-danger ml-2 removeFromCart"
+                onclick="removeFromCart(this)"
+              >
+                Remove From Cart
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/CRF1100L-AFRICA-TWIN-DCT-22.jpg"
+              alt=""
+              class="img-fluid"
+              data-name="CRF1100L Africa Twin"
+              data-price="150000"
+            />
+            <p class="text-center">CRF1100L Africa Twin</p>
+            <p class="text-center price">Pris: 150.000 kr</p>
+            <div class="text-center">
+              <button class="btn btn-success mr-2 addToCart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+              <span class="quantity">0</span>
+              <button
+                class="btn btn-danger ml-2 removeFromCart"
+                onclick="removeFromCart(this)"
+              >
+                Remove From Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+            <img
+              src="img/CRF300L-2021.jpg"
+              alt=""
+              class="img-fluid"
+              data-name="CRF300L"
+              data-price="30000"
+            />
+            <p class="text-center">CRF300L</p>
+            <p class="text-center price">Pris: 30.000 kr</p>
+            <div class="text-center">
+              <button class="btn btn-success mr-2 addToCart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+              <span class="quantity">0</span>
+              <button
+                class="btn btn-danger ml-2 removeFromCart"
+                onclick="removeFromCart(this)"
+              >
+                Remove From Cart
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/GOLDWING-TOUR-DCT-2022.jpg"
+              alt=""
+              class="img-fluid"
+              data-name="Goldwing Tour DCT"
+              data-price="380000"
+            />
+            <p class="text-center">Goldwing Tour DCT</p>
+            <p class="text-center price">Pris: 380.000 kr</p>
+            <div class="text-center">
+              <button class="btn btn-success mr-2 addToCart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+              <span class="quantity">0</span>
+              <button
+                class="btn btn-danger ml-2 removeFromCart"
+                onclick="removeFromCart(this)"
+              >
+                Remove From Cart
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/NT1100-2022.jpg"
+              alt=""
+              class="img-fluid"
+              data-name="NT1100"
+              data-price="190000"
+            />
+            <p class="text-center">NT1100</p>
+            <p class="text-center price">Pris: 190.000 kr</p>
+            <div class="text-center">
+              <button class="btn btn-success mr-2 addToCart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+              <span class="quantity">0</span>
+              <button
+                class="btn btn-danger ml-2 removeFromCart"
+                onclick="removeFromCart(this)"
+              >
+                Remove From Cart
+              </button>
+            </div>
+          </div>
+    </main>
+    <footer></footer>
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.start-link {
+    color: #00a2ff;
+    /* Orange färg för "Start" */
+    font-family: Arial, sans-serif;
+    /* Använd Arial för "Start" */
+}
+
+.shop-link {
+    color: #ff0048;
+    /* Mörkröd färg för "Shop" */
+    font-family: "Times New Roman", serif;
+    /* Använd Times New Roman för "Shop" */
+}
+
+.about-link {
+    color: #04fd19;
+    /* Blå färg för "About" */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Använd Verdana för "About" */
+}
